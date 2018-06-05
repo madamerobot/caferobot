@@ -1,6 +1,7 @@
 .main {
   overflow: hidden;
   box-sizing: border-box;
+  background: #DEF9FA;
 }
 
 .fullpage-item {
@@ -8,6 +9,7 @@
   background: #DEF9FA;
   height: 100vh;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .column {
@@ -20,23 +22,70 @@
   max-width: 720px;
 }
 
+.room-box {
+  text-align: center;
+}
+
+.cell {
+  border: solid 3px #FF2600;
+  background: #DEF9FA;
+  padding: 18px;
+}
+
+h3 {
+  font-family: 'Quantico', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 td {
   width: 40%;
-  border: solid 3px red;
+  border: solid 3px #FF2600;
   display: inline-block;
   padding: 18px;
+  background: #DEF9FA;
+  text-align: center;
 }
 
 .column-full {
   width: 100%;
 }
 
-.sticker, .fullSize {
+.sticker, .full-size {
   font-family: 'Quantico', sans-serif;
+  text-decoration: underline;
   font-size: 66px;
-  color: red;
+  color: #FF2600;
+}
+
+.full-size {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sub-header {
+  font-size: 58px;
+  color: #FF2600;
+  font-family: 'Quantico', sans-serif;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.sticker {
+  background-color: #9013FE;
+  font-style: italic;
+  color: #DEF9FA;
+  line-height: 0px;
+}
+
+.full-size, .intro-text {
+  text-align: center;
 }
 
 p {
   font-family: 'Inconsolata', monospace;
+}
+
+ul {
+  list-style: none;
 }
