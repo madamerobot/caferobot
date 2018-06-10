@@ -1,20 +1,38 @@
+body {
+  background: #DEF9FA;
+}
+
 .main {
   overflow: hidden;
   box-sizing: border-box;
   background: #DEF9FA;
 }
 
+.nav {
+  padding-top: 20px;
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+}
+
 .fullpage-item {
-  border: solid 2px blue;
+  /* border: solid 2px blue; */
   background: #DEF9FA;
   height: 100vh;
+  width: 78%;
   max-width: 1440px;
   margin: 0 auto;
+  margin-bottom: 8%;
+}
+
+.full-width {
+  width: 100%;
+  /* border: 1px solid blue; */
 }
 
 .column {
-  width: 50%;
+  width: 49%;
   float: left;
+  /* border: 1px solid blue; */
 }
 
 .faq-box {
@@ -24,6 +42,8 @@
 
 .room-box {
   text-align: center;
+  background-color: #DEF9FA;
+  z-index: 10;
 }
 
 .cell {
@@ -38,10 +58,13 @@ h3 {
   text-transform: uppercase;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 td {
-  width: 40%;
   border: solid 3px #FF2600;
-  display: inline-block;
+  width: 40%;
   padding: 18px;
   background: #DEF9FA;
   text-align: center;
@@ -49,12 +72,13 @@ td {
 
 .column-full {
   width: 100%;
+  text-align: center;
 }
 
-.sticker, .full-size {
+.full-size {
   font-family: 'Quantico', sans-serif;
   text-decoration: underline;
-  font-size: 66px;
+  font-size: 58px;
   color: #FF2600;
 }
 
@@ -71,11 +95,38 @@ td {
   margin-bottom: 10px;
 }
 
+.img-container {
+  /* margin-left: 18%; */
+}
+
 .sticker {
-  background-color: #9013FE;
+  font-family: 'Quantico', sans-serif;
+  text-decoration: underline;
+  font-size: 52px;
   font-style: italic;
   color: #DEF9FA;
-  line-height: 0px;
+}
+
+.purple-highlight {
+  background-color: #9013FE;
+  padding-right: 8px;
+}
+
+.sticker-box {
+  /* background-color: #9013FE; */
+  /* line-height: 0px; */
+  margin-top: 10%;
+  line-height: 1.2;
+}
+
+.room-container {
+  margin-left: 8%;
+  margin-bottom: 10%;
+  margin-right: -60px;
+}
+
+.illustration {
+  margin-top: 6%;
 }
 
 .full-size, .intro-text {
