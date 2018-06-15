@@ -17,10 +17,20 @@ body {
 .fullpage-item {
   background: #DEF9FA;
   height: 100vh;
+  max-height: 960px;
   width: 78%;
   max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 2%;
+  margin-bottom: 140px;
+  position: relative;
+  /* background-color: pink; */
+}
+
+.center-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
 }
 
 .full-width {
@@ -28,8 +38,8 @@ body {
 }
 
 .column {
+  /* background-color: yellow; */
   width: 49%;
-  margin-top: 23%;
   float: left;
 }
 
