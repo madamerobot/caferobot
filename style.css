@@ -157,6 +157,13 @@ ul {
 @media (max-width: 920px) {
   .fullpage-item {
     width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    position: inherit;
+  }
+  .center-container {
+    top: 0%;
+    position: relative;
   }
   .room-container {
     margin-right: 0;
