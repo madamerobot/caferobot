@@ -1,3 +1,5 @@
+let introContainer
+
 function toggleCopy(date){
 
     console.log(date.style.color)
@@ -7,29 +9,18 @@ function toggleCopy(date){
     } else {
         date.style.color = 'rgb(255, 38, 0)'
     }
+}
 
-    // if (!toggled){
-    //     date.innerText = 'JUNE 25TH'
-    //     location.innerText = 'LOCATION TBC'
-    //     nextMeetup.innerText = 'NEXT MEETUP'
-    //     date.style.color = '#9013FE'
-    //     location.style.color = '#9013FE'
-    //     nextMeetup.style.color = '#9013FE'
-    //     // toggled = true
-    // } else {
-    //     date.innerText = 'WHAT WEB DEVELOPERS DO'
-    //     location.innerText = 'YOUR FOCUS'
-    //     nextMeetup.innerText = 'IN YOUR ASS'
-    //     date.style.color = '#FF2600'
-    //     location.style.color = '#FF2600'
-    //     nextMeetup.style.color = '#FF2600'
-    //     // toggled = false
-    // }
+function elementIsVisible(element){
+    let vh = window.innerHeight
+    let bounds = element.getBoundingClientRect()
+    return !(bounds.top < 0 && bounds.bottom < 0)
+      && !(bounds.top > vh && bounds.bottom > vh)
 }
 
 window.addEventListener('load', function(){
     
-    let introContainer = document.querySelector('.full-size')
+    introContainer = document.querySelector('.intro-screen')
 
     introContainer.addEventListener('click', function(){
         let location = document.querySelector('.location')
@@ -38,5 +29,9 @@ window.addEventListener('load', function(){
         toggleCopy(date)
     })
 }) 
+
+window.addEventListener('scroll', function() {
+    console.log(elementIsVisible(introContainer))
+})
 
 
