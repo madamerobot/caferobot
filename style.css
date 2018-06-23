@@ -67,6 +67,11 @@ body {
 
 img {
   max-height: 700px;
+  transition: transform 0.25s;
+}
+
+img:hover {
+  transform: translate(-12px, 12px)
 }
 
 h3 {
@@ -77,6 +82,7 @@ h3 {
 
 table {
   border-collapse: collapse;
+  position: relative;
 }
 
 td {
@@ -129,6 +135,10 @@ td {
   padding-right: 8px;
 }
 
+.yellow {
+  color: yellow;
+}
+
 .sticker-box {
   margin-top: 10%;
   line-height: 1.2;
@@ -142,10 +152,12 @@ td {
 
 .illustration {
   margin-top: 6%;
+  cursor: pointer;
 }
 
 .full-size, .intro-text {
   text-align: center;
+  cursor: pointer;
 }
 
 p {
@@ -187,6 +199,16 @@ ul {
     position: relative;
   }
 }
+
+/*=====SVG ANIMATIONS========*/
+#Rectangle-7{
+  transition: transform 0.1s;
+}
+#Rectangle-7:hover {
+  transform: translate(-20px)
+}
+
+/*=====GLITCH ANIMATIONS=======*/
 
 .glitch-container {
   position: relative;
