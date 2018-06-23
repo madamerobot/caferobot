@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quantico" rel="stylesheet">
-    <script src="script.js"></script>
     <title>CAFE ROBOT</title>
   </head>
   <body>
     <div class="main">
 
-        <div class="fullpage-item intro-screen">
+        <div class="fullpage-item intro-screen" id="screen-01">
 
           <div class="nav">
             <span>CAFE ROBOT | WHO DIS?</span>
@@ -34,7 +34,7 @@
           </div>
         </div>
         
-        <div class="fullpage-item full-width">
+        <div class="fullpage-item" id="screen-02">
 
           <div class="center-container">
             <div class="column column-left">
@@ -49,7 +49,12 @@
             </div>
             <div class="column column-right">
               <div class="faq-box">
-                <p class="sub-header">BE NOSEY</p>
+                <div class="glitch-container">
+                    <p class="glitch sub-header">BE NOSEY</p>
+                    <p class="glitch sub-header">BE NOSEY</p>
+                    <p class="glitch sub-header">BE NOSEY</p>
+                </div>
+                <!-- <p class="sub-header">BE NOSEY</p> -->
                 <table>
                   <tr>
                     <td>
@@ -90,7 +95,7 @@
           </div>
         </div>
         
-        <div class="fullpage-item full-width">
+        <div class="fullpage-item" id="screen-03">
 
           <div class="center-container">
 
@@ -146,6 +151,10 @@
 
     <div class="footer">
       <p class="sub-header">COME BY AND SAY HI TO US!</p>
+      <p class="intro-text">
+        CAFE ROBOT is a community for newbie-developers and code-hobbyists in Amsterdam.<br> We usually meet once a month
+        to discuss ideas and questions and to have 1-3 drinks.
+      </p>
     </div>
 
   </body>

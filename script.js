@@ -1,15 +1,6 @@
-let introContainer
-
-function toggleCopy(date){
-
-    console.log(date.style.color)
-    
-    if (date.style.color = 'rgb(255, 38, 0)'){
-        date.style.color = 'rgb(144, 19, 254)'
-    } else {
-        date.style.color = 'rgb(255, 38, 0)'
-    }
-}
+let screen01
+let screen02
+let screen03
 
 function elementIsVisible(element){
     let vh = window.innerHeight
@@ -18,20 +9,20 @@ function elementIsVisible(element){
       && !(bounds.top > vh && bounds.bottom > vh)
 }
 
-window.addEventListener('load', function(){
-    
-    introContainer = document.querySelector('.intro-screen')
-
-    introContainer.addEventListener('click', function(){
-        let location = document.querySelector('.location')
-        let nextMeetup = document.querySelector('.next-meetup')
-        let date = document.querySelector('.date')
-        toggleCopy(date)
-    })
+window.addEventListener('load', function(){ 
+    screen01 = document.getElementById('screen-01')
+    screen02 = document.getElementById('screen-02')
+    screen03 = document.getElementById('screen-03')
 }) 
 
 window.addEventListener('scroll', function() {
-    console.log(elementIsVisible(introContainer))
+    if (elementIsVisible(screen01)){
+        console.log("👀 SCREEN 01")
+    } else if (elementIsVisible(screen02)){
+        console.log("👀 SCREEN 02")
+    } else if (elementIsVisible(screen03)){
+        console.log("👀 SCREEN 03")
+    }
 })
 
 
