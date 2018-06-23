@@ -1,3 +1,7 @@
+* {
+  /* border: 1px solid red; */
+}
+
 body {
   background: #DEF9FA;
 }
@@ -6,6 +10,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   background: #DEF9FA;
+  width: 100%;
 }
 
 .nav {
@@ -18,7 +23,7 @@ body {
   background: #DEF9FA;
   height: 100vh;
   max-height: 960px;
-  width: 78%;
+  width: 82%;
   max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 140px;
@@ -31,10 +36,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   display: block;
-}
-
-.full-width {
-  width: 100%;
+  /* background: plum; */
 }
 
 .column {
@@ -60,6 +62,10 @@ body {
   background: #DEF9FA;
   padding: 18px;
   z-index: 5;
+}
+
+img {
+  max-height: 700px;
 }
 
 h3 {
