@@ -13,9 +13,17 @@ function elementIsVisible(element){
       && !(bounds.top > vh && bounds.bottom > vh)
 }
 
-// function addAnimation(element, direction){
-//     element.style.transform = "translate(10px)"
-// }
+function animateElements(screen){    
+    console.log(`Animating ${screen.id}`)
+    let screenNumber = screen.id.split('-')[1]
+    let selector = `img-${screenNumber}`
+    let selectedElement = document.getElementById(selector)
+    let bounds = selectedElement.getBoundingClientRect()
+    console.log(bounds.x, bounds.y)
+    selectedElement.style.transition = "transform(0.25s ease-in-out)";
+    selectedElement.style.transform = "translate(-15px, 15px)";
+    // selectedElement.style.transform = "translate(50px, -50px)";
+}
 
 window.addEventListener('load', function(){ 
     screen01 = document.getElementById('screen-01')
@@ -27,8 +35,6 @@ window.addEventListener('load', function(){
     eventLocation = document.querySelector('.location')
 
     introText = document.querySelector('.full-size')
-    console.log('INTRO TEXT:')
-    console.log(introText)
 
     introText.addEventListener('click', function(){
         nextMeetup.innerText = "MEXT MEETUP"
@@ -41,12 +47,17 @@ window.addEventListener('load', function(){
 }) 
 
 window.addEventListener('scroll', function() {
-    if (elementIsVisible(screen01)){
-        console.log("👀 SCREEN 01")
-    } else if (elementIsVisible(screen02)){
+    
+    let animationToggled = false
+
+    if (elementIsVisible(screen02)){
         console.log("👀 SCREEN 02")
+        animateElements(screen02)
+        animationToggled = true
     } else if (elementIsVisible(screen03)){
         console.log("👀 SCREEN 03")
+        animateElements(screen03)
+        animationToggled = true
     }
 })
 
