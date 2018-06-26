@@ -52,7 +52,7 @@ body {
   display: block;
   background: #DEF9FA;
   height: 100vh;
-  max-height: 960px;
+  /* max-height: 960px; */
   width: 82%;
   max-width: 1440px;
   margin: 0 auto;
