@@ -7,6 +7,7 @@ h3 {
 
 p {
   font-family: 'Inconsolata', monospace;
+  line-height: 1.3em;
 }
 
 ul {
@@ -33,6 +34,7 @@ ul {
 
 body {
   background: #DEF9FA;
+  cursor: url('cursor.svg'), auto;
 }
 
 .main {
@@ -130,10 +132,15 @@ td {
   text-align: center;
 }
 
+.intro-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .full-size {
   font-family: 'Quantico', sans-serif;
   text-decoration: underline;
-  font-size: 58px;
+  font-size: 54px;
   color: #FF2600;
   padding-left: 10px;
   padding-right: 10px;
@@ -168,12 +175,12 @@ td {
 
 .illustration {
   margin-top: 6%;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .full-size, .intro-text {
   text-align: center;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .footer {
@@ -183,10 +190,12 @@ td {
 
 /*=====DECO ARROWS========*/
 .arrows {
+  /* display: none; */
   display: block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 5;
 }
 
 .arrows-left {
@@ -390,6 +399,10 @@ td {
 
 /*=====MEDIA BREAKPOINTS========*/
 @media (max-width: 920px) {
+  .arrows {
+    display: none;
+  }
+
   .fullpage-item {
     width: 100%;
     max-height: 100%;
@@ -399,6 +412,9 @@ td {
   .center-container {
     top: 0%;
     position: relative;
+  }
+  .intro-container {
+    width: 100%;
   }
   .room-container {
     margin-right: 0;
@@ -413,5 +429,8 @@ td {
   }
   .move-back {
     position: relative;
+  }
+  .image-container {
+    width: 100%;
   }
 }

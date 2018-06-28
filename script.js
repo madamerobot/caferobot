@@ -39,9 +39,9 @@ window.addEventListener('load', function(){
     introText.addEventListener('click', function(){
         nextMeetup.innerText = "MEXT MEETUP"
         nextMeetup.style.color = "#9013FE"
-        eventLocation.innerText = "DE RUYSCHKAMER"
+        eventLocation.innerText = "DE BLOEMENBAR"
         eventLocation.style.color = "#9013FE"
-        date.innerText = "JUNE 27TH"
+        date.innerText = "8PM | JULY 25TH"
         date.style.color = "#9013FE"
     })
 }) 
