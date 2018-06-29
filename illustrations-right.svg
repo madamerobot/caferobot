@@ -1,23 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="128px" height="661px" viewBox="0 0 128 661" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="illustrations-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD---Above-Fold" transform="translate(-1184.000000, -163.000000)">
-            <g id="Group-3" transform="translate(1181.000000, 147.000000)">
-                <polygon id="Path-3" stroke="#9013FE" stroke-width="3" fill="#9013FE" transform="translate(90.500000, 204.000000) rotate(180.000000) translate(-90.500000, -204.000000) " points="68 182 72.9547834 226 113 191.996198"></polygon>
-                <polygon id="Path-3" stroke="#9013FE" stroke-width="3" transform="translate(90.903226, 446.641040) rotate(10.000000) translate(-90.903226, -446.641040) " points="56.9032263 415.42987 64.3904546 477.852209 124.903226 429.611371"></polygon>
-                <path d="M53.3947368,73.5 L112.605263,107.5" id="Line" stroke="#9013FE" stroke-width="3" stroke-linecap="square" transform="translate(83.000000, 90.500000) scale(-1, 1) translate(-83.000000, -90.500000) "></path>
-                <path id="Line-decoration-1" d="M112.605263,107.5 L104.733421,99.5203944 L101.745636,104.72358 L112.605263,107.5 Z" stroke="#9013FE" stroke-width="3" stroke-linecap="square"></path>
-                <path d="M48.3984375,589.5 L101.5,559.5" id="Line" stroke="#9013FE" stroke-width="3" stroke-linecap="square" transform="translate(75.000000, 574.500000) scale(-1, 1) translate(-75.000000, -574.500000) "></path>
-                <path id="Line-decoration-1" d="M101.5,559.5 L90.6212126,562.200367 L93.5725177,567.424331 L101.5,559.5 Z" stroke="#9013FE" stroke-width="3" stroke-linecap="square"></path>
-                <path d="M51.3974359,318.5 L112.602564,318.5" id="Line" stroke="#9013FE" stroke-width="3" stroke-linecap="square" transform="translate(82.000000, 318.500000) scale(-1, 1) translate(-82.000000, -318.500000) "></path>
-                <path id="Line-decoration-1" d="M112.602564,318.5 L101.802564,315.5 L101.802564,321.5 L112.602564,318.5 Z" stroke="#9013FE" stroke-width="3" stroke-linecap="square"></path>
-                <text id="#" font-family="Quantico-Regular, Quantico" font-size="48" font-weight="normal" fill="#9013FE">
-                    <tspan x="25.356" y="51">#</tspan>
-                </text>
-                <text id="#" font-family="Quantico-Regular, Quantico" font-size="64" font-weight="normal" fill="#9013FE">
-                    <tspan x="0.808" y="675">#</tspan>
-                </text>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="221" height="630">
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#9013FE" stroke-linecap="square" stroke-width="3" d="M132.5 53.5l-51 44M81.5 97.5l10.137-4.7834-3.9194-4.543L81.5 97.5zM143.3984 559.5L81.5 533.5M81.5 533.5l8.7955 6.9484 2.3236-5.5318L81.5 533.5zM183.5 309.5h-71M112.5 309.5l10.8 3v-6l-10.8 3z"/>
+    <path fill="#9013FE" stroke="#9013FE" stroke-width="3" d="M199.3497 468.9532l-.1894-28.1453-27.4205 18.8537zM47.4284 244.6107l15.8325-38.1014-48.0507 9.5927z"/>
+    <path stroke="#9013FE" stroke-width="3" d="M10.5079 409.5764l83.2952 21.9977-40.6957-82.0494z"/>
+    <text fill="#9013FE" font-family="Quantico-Regular, Quantico" font-size="48" transform="translate(-2 -16)">
+      <tspan x=".356" y="51">#</tspan>
+    </text>
+    <text fill="#9013FE" font-family="Quantico-Regular, Quantico" font-size="64" transform="translate(-2 -16)">
+      <tspan x="7.308" y="644">#</tspan>
+    </text>
+    <text fill="#9013FE" font-family="Quantico-Regular, Quantico" font-size="48" transform="translate(-2 -16)">
+      <tspan x="189.356" y="197">#</tspan>
+    </text>
+  </g>
 </svg>
