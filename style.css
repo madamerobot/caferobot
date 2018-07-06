@@ -34,7 +34,11 @@ ul {
 
 body {
   background: #DEF9FA;
-  cursor: url('cursor.svg'), auto;
+  cursor: url('cursor-big.png'), auto;
+  cursor: -webkit-image-set(
+    url('cursor-big.png') 1x,
+    url('cursor-big.png') 2x
+  ), auto;
 }
 
 .main {
@@ -46,6 +50,7 @@ body {
 
 .nav {
   padding-top: 20px;
+  padding-left: 20px;
   font-family: 'Inconsolata', monospace;
   text-align: left;
 }
@@ -142,6 +147,14 @@ td {
   margin: 0 auto;
 }
 
+.full-size:hover {
+  cursor: url('cursor-big-flip.png'), auto;
+  cursor: -webkit-image-set(
+    url('cursor-big-flip.png') 1x,
+    url('cursor-big-flip.png') 2x
+  ), auto;
+}
+
 .full-size {
   font-family: 'Quantico', sans-serif;
   text-decoration: underline;
@@ -180,12 +193,18 @@ td {
 
 .illustration {
   margin-top: 6%;
-  /* cursor: pointer; */
+}
+
+.illustration > a:hover {
+  cursor: url('cursor-big-flip.png'), auto;
+  cursor: -webkit-image-set(
+    url('cursor-big-flip.png') 1x,
+    url('cursor-big-flip.png') 2x
+  ), auto;
 }
 
 .full-size, .intro-text {
   text-align: center;
-  /* cursor: pointer; */
 }
 
 .footer {
@@ -195,7 +214,6 @@ td {
 
 /*=====DECO ARROWS========*/
 .arrows {
-  /* display: none; */
   display: block;
   position: absolute;
   top: 50%;
@@ -225,6 +243,7 @@ td {
 }
 
 /*=====SVG ANIMATIONS========*/
+/*Envelope*/
 #Rectangle-7{
   transition: transform 0.1s;
 }

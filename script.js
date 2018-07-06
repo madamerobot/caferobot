@@ -37,7 +37,7 @@ window.addEventListener('load', function(){
     introText = document.querySelector('.full-size')
 
     introText.addEventListener('click', function(){
-        nextMeetup.innerText = "MEXT MEETUP"
+        nextMeetup.innerText = "NEXT MEETUP"
         nextMeetup.style.color = "#9013FE"
         eventLocation.innerText = "DE BLOEMENBAR"
         eventLocation.style.color = "#9013FE"
