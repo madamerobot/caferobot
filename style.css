@@ -93,9 +93,14 @@ body {
   width: 100%;
 }
 
-.faq-box {
+#faq-box {
   margin-left: -90px;
   max-width: 720px;
+}
+
+.room-container {
+  margin-left: 8%;
+  margin-right: -60px;
 }
 
 .room-box {
@@ -108,7 +113,6 @@ body {
   position: relative;
   border: solid 3px #FF2600;
   background: #DEF9FA;
-  /* padding: 18px; */
   z-index: 5;
   text-align: left;
   padding-left: 5%;
@@ -119,14 +123,6 @@ body {
 
 img {
   max-height: 700px;
-}
-
-img:hover {
-  /* transform: translate(-12px, 12px) */
-}
-
-.img-container {
-  transition: transform 0.25s ease-in-out;
 }
 
 table {
@@ -193,22 +189,15 @@ td {
   line-height: 1.2;
 }
 
-.room-container {
+.room-box{
   margin-left: 8%;
   margin-bottom: 10%;
   margin-right: -60px;
 }
 
-.illustration {
-  margin-top: 6%;
-}
-
-.illustration > a:hover {
-  cursor: url('cursor-big-flip.png'), auto;
-  cursor: -webkit-image-set(
-    url('cursor-big-flip.png') 1x,
-    url('cursor-big-flip.png') 2x
-  ), auto;
+.image-container {
+  margin-left: -15px;
+  z-index: 1;
 }
 
 .full-size, .intro-text {
@@ -251,6 +240,48 @@ td {
   margin-right: 50px;
 }
 
+
+/*====KEYFRAME ANIMATIONS========*/
+
+.animation-01 {
+  animation: animation-01 1000ms ease 1;
+}
+
+@keyframes animation-01 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-14px, -14px);
+  }
+}
+
+.animation-02 {
+  animation: animation-02 1000ms ease 1;
+}
+
+@keyframes animation-02 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(14px, 14px);
+  }
+}
+
+.letter-animation {
+  animation: letter-animation 1000ms ease 1;
+}
+
+@keyframes letter-animation {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(80px);
+  }
+}
+
 /*=====SVG ANIMATIONS========*/
 .illustration-wrapper {
   display: block;
@@ -260,18 +291,26 @@ td {
 
 .envelope-wrapper {
   position: absolute;
+  cursor: url('cursor-big-flip.png'), auto;
+  cursor: -webkit-image-set(
+    url('cursor-big-flip.png') 1x,
+    url('cursor-big-flip.png') 2x
+  ), auto;
 }
 
-.letter-wrapper {
+#letter-wrapper {
   position: absolute;
   left: 20%;
   margin-top: 18px;
   transition-timing-function: ease-out;
   transition: transform 0.4s;
-}
+  animation-iteration-count: 1;
 
-.letter-wrapper:hover {
-  transform: translateX(100px);
+  cursor: url('cursor-big-flip.png'), auto;
+  cursor: -webkit-image-set(
+    url('cursor-big-flip.png') 1x,
+    url('cursor-big-flip.png') 2x
+  ), auto;
 }
 
 /*=====GLITCH ANIMATIONS=======*/
@@ -307,7 +346,6 @@ td {
 .footer-glitch-el {
   display: block;
   margin: 0 auto;
-  /* height: 100%; */
   height: 80px;
   width: 100%;
 }
@@ -489,7 +527,7 @@ td {
   .intro-container {
     width: 100%;
   }
-  .room-container {
+  .room-box {
     margin-right: 0;
     margin-left: 0;
   }
