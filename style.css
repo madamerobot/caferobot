@@ -108,8 +108,13 @@ body {
   position: relative;
   border: solid 3px #FF2600;
   background: #DEF9FA;
-  padding: 18px;
+  /* padding: 18px; */
   z-index: 5;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 img {
@@ -132,9 +137,12 @@ table {
 td {
   border: solid 3px #FF2600;
   width: 40%;
-  padding: 18px;
   background: #DEF9FA;
-  text-align: center;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .column-full {
@@ -210,6 +218,7 @@ td {
 .footer {
   width: 100%;
   text-align: center;
+  margin-bottom: 140px;
 }
 
 /*=====DECO ARROWS========*/
@@ -243,12 +252,26 @@ td {
 }
 
 /*=====SVG ANIMATIONS========*/
-/*Envelope*/
-#Rectangle-7{
-  transition: transform 0.1s;
+.illustration-wrapper {
+  display: block;
+  position: relative;
+  padding-top: 5%;
 }
-#Rectangle-7:hover {
-  transform: translate(-20px)
+
+.envelope-wrapper {
+  position: absolute;
+}
+
+.letter-wrapper {
+  position: absolute;
+  left: 20%;
+  margin-top: 18px;
+  transition-timing-function: ease-out;
+  transition: transform 0.4s;
+}
+
+.letter-wrapper:hover {
+  transform: translateX(100px);
 }
 
 /*=====GLITCH ANIMATIONS=======*/
@@ -274,6 +297,19 @@ td {
 .glitch:nth-child(3) {
   color: #FF2600;
   animation: glitch3 2.5s infinite;
+}
+
+.footer-glitch {
+  display: block;
+  width: auto;
+}
+
+.footer-glitch-el {
+  display: block;
+  margin: 0 auto;
+  /* height: 100%; */
+  height: 80px;
+  width: 100%;
 }
 
 /*=====KEYFRAMES=======*/
