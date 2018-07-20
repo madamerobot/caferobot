@@ -34,10 +34,10 @@ ul {
 
 body {
   background: #DEF9FA;
-  cursor: url('cursor-big.png'), auto;
+  cursor: url('assets/cursor-big.png'), pointer;
   cursor: -webkit-image-set(
-    url('cursor-big.png') 1x,
-    url('cursor-big.png') 2x
+    url('assets/cursor-big.png') 1x,
+    url('assets/cursor-big.png') 2x
   ), auto;
 }
 
@@ -59,13 +59,11 @@ body {
   display: block;
   background: #DEF9FA;
   height: 100vh;
-  /* max-height: 960px; */
   width: 82%;
   max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 140px;
   position: relative;
-  /* background-color: pink; */
 }
 
 .center-container {
@@ -73,11 +71,9 @@ body {
   top: 50%;
   transform: translateY(-50%);
   display: block;
-  /* background: plum; */
 }
 
 .column {
-  /* background-color: yellow; */
   width: 49%;
   float: left;
 }
@@ -152,10 +148,10 @@ td {
 }
 
 .full-size:hover {
-  cursor: url('cursor-big-flip.png'), auto;
+  cursor: url('assets/cursor-big-flip.png'), auto;
   cursor: -webkit-image-set(
-    url('cursor-big-flip.png') 1x,
-    url('cursor-big-flip.png') 2x
+    url('assets/cursor-big-flip.png') 1x,
+    url('assets/cursor-big-flip.png') 2x
   ), auto;
 }
 
@@ -291,10 +287,10 @@ td {
 
 .envelope-wrapper {
   position: absolute;
-  cursor: url('cursor-big-flip.png'), auto;
+  cursor: url('assets/cursor-big-flip.png'), auto;
   cursor: -webkit-image-set(
-    url('cursor-big-flip.png') 1x,
-    url('cursor-big-flip.png') 2x
+    url('assets/cursor-big-flip.png') 1x,
+    url('assets/cursor-big-flip.png') 2x
   ), auto;
 }
 
@@ -306,10 +302,10 @@ td {
   transition: transform 0.4s;
   animation-iteration-count: 1;
 
-  cursor: url('cursor-big-flip.png'), auto;
+  cursor: url('assets/cursor-big-flip.png'), auto;
   cursor: -webkit-image-set(
-    url('cursor-big-flip.png') 1x,
-    url('cursor-big-flip.png') 2x
+    url('assets/cursor-big-flip.png') 1x,
+    url('assets/cursor-big-flip.png') 2x
   ), auto;
 }
 
@@ -513,7 +509,6 @@ td {
   .arrows {
     display: none;
   }
-
   .fullpage-item {
     width: 100%;
     max-height: 100%;
@@ -527,11 +522,11 @@ td {
   .intro-container {
     width: 100%;
   }
-  .room-box {
+  #room-container {
     margin-right: 0;
     margin-left: 0;
   }
-  .faq-box {
+  #faq-box {
     margin-left: 0;
   }
   .column {
@@ -543,5 +538,8 @@ td {
   }
   .image-container {
     width: 100%;
+  }
+  .illustration-wrapper {
+    margin-bottom: 170px;
   }
 }
