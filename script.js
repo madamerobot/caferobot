@@ -6,15 +6,14 @@ let introText
 let animatedElements = []
 let animationMap = {}
 
-let copyToggled = true
 let smallScreen = false
 
 function setIntroCopy1 () {
     nextMeetup.innerText = "NEXT MEETUP"
     nextMeetup.style.color = "#9013FE"
-    eventLocation.innerText = "DE BLOEMENBAR"
+    eventLocation.innerText = "PENSION HOMELAND"
     eventLocation.style.color = "#9013FE"
-    date.innerText = "8PM | JULY 25TH"
+    date.innerText = "7PM | AUG 22ND"
     date.style.color = "#9013FE"
 }
 
@@ -87,14 +86,11 @@ window.addEventListener('load', function() {
     eventLocation = document.querySelector('.location')
     introText = document.querySelector('.full-size')
 
-    introText.addEventListener('click', function() {
-        if (copyToggled) {
-            setIntroCopy1()
-            copyToggled = false
-        } else {
-            setIntroCopy2()
-            copyToggled = true
-        }
+    introText.addEventListener('mouseenter', function() {
+        setIntroCopy1()
+    })
+    introText.addEventListener('mouseleave', function() {
+        setIntroCopy2()
     })
 }) 
 
